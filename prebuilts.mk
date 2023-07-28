@@ -70,7 +70,8 @@ PRODUCT_PACKAGES += \
     MotoCalculator
 else
 PRODUCT_PACKAGES += \
-    ExactCalculator
+    ExactCalculator \
+    CalculatorGoogle
 endif
 
 # DuckDuckGo
