@@ -13,9 +13,7 @@
 # limitations under the License.
 
 # Bootanimation
-ifeq ($(TARGET_BOOT_ANIMATION_RES),480)
-     PRODUCT_COPY_FILES += vendor/prebuilts/common/bootanimation/bootanimation-480p.zip:$(TARGET_COPY_OUT_SYSTEM)/media/bootanimation.zip
-else ifeq ($(TARGET_BOOT_ANIMATION_RES),720)
+ifeq ($(TARGET_BOOT_ANIMATION_RES),720)
      PRODUCT_COPY_FILES += vendor/prebuilts/common/bootanimation/bootanimation-720p.zip:$(TARGET_COPY_OUT_SYSTEM)/media/bootanimation.zip
 else ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
      PRODUCT_COPY_FILES += vendor/prebuilts/common/bootanimation/bootanimation-1080p.zip:$(TARGET_COPY_OUT_SYSTEM)/media/bootanimation.zip
