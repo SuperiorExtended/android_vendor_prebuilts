@@ -85,7 +85,10 @@ endif
 ifeq ($(USE_DUCKDUCKGO),true)
 PRODUCT_PACKAGES += \
     DuckDuckGo
-else
+endif
+
+# Via
+ifeq ($(USE_ViaBrowser),true)
 PRODUCT_PACKAGES += \
     ViaBrowser
 endif
