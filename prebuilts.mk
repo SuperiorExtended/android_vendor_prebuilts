@@ -92,3 +92,9 @@ ifeq ($(USE_ViaBrowser),true)
 PRODUCT_PACKAGES += \
     ViaBrowser
 endif
+
+# ViMusic
+ifeq ($(TARGET_BUILD_VIMUSIC),true)
+PRODUCT_PACKAGES += \
+    ViMusic
+endif
