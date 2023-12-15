@@ -13,14 +13,14 @@
 # limitations under the License.
 
 # Bootanimation
-ifeq ($(TARGET_BOOT_ANIMATION_RES),480)
-     PRODUCT_COPY_FILES += vendor/prebuilts/common/bootanimation/bootanimation-480p.zip:$(TARGET_COPY_OUT_SYSTEM)/media/bootanimation.zip
-else ifeq ($(TARGET_BOOT_ANIMATION_RES),720)
+ifeq ($(TARGET_BOOT_ANIMATION_RES),720)
      PRODUCT_COPY_FILES += vendor/prebuilts/common/bootanimation/bootanimation-720p.zip:$(TARGET_COPY_OUT_SYSTEM)/media/bootanimation.zip
 else ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
      PRODUCT_COPY_FILES += vendor/prebuilts/common/bootanimation/bootanimation-1080p.zip:$(TARGET_COPY_OUT_SYSTEM)/media/bootanimation.zip
+else ifeq ($(TARGET_BOOT_ANIMATION_RES),1440)
+     PRODUCT_COPY_FILES += vendor/prebuilts/common/bootanimation/bootanimation-1440p.zip:$(TARGET_COPY_OUT_SYSTEM)/media/bootanimation.zip
 else
-     $(warning TARGET_BOOT_ANIMATION_RES is invalid or undefined, using generic bootanimation)
+     $(warning TARGET_BOOT_ANIMATION_RES is invalid or undefined, using generic bootanimation res i.e. 1080p)
 PRODUCT_COPY_FILES += \
-    vendor/prebuilts/common/bootanimation/bootanimation-720p.zip:$(TARGET_COPY_OUT_SYSTEM)/media/bootanimation.zip
+    vendor/prebuilts/common/bootanimation/bootanimation-1080p.zip:$(TARGET_COPY_OUT_SYSTEM)/media/bootanimation.zip
 endif
