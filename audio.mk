@@ -46,7 +46,7 @@ PRODUCT_COPY_FILES += $(foreach f,$(NOTIFICATIONS),\
 # Default ringtone/notification/alarm sounds
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Soulful.ogg \
-    ro.config.notification_sound=Pikachu.ogg \
+    ro.config.notification_sound=Ping.ogg \
     ro.config.alarm_alert=Helium.ogg
 
 # Inherit AOSP audio package last so vendor audio overrides AOSP audio
